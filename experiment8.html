@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EXPERIMENT - FLEX BOX </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f9f9f9;
+        }
+
+        h2 {
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            border:2px solid red ;
+            width: 100%;
+            height: 250px;
+        }
+
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+            /* fixed shadow */
+            width: 200px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 70px;
+            /* missing px */
+            height: 70px;
+            background-color: firebrick;
+            border-radius: 50%;
+            /* property corrected  */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 22px;
+            margin: auto;
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .detail {
+            font-size: 14px;
+            color: rgb(81, 1, 1);
+            margin: 2px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Student Profile Cards</h2>
+    <div class="container">
+        <div class="card">
+            <div class="avatar">AK</div>
+            <div class="name">Aditya kasaudhan</div>
+            <div class="detail">B.tect - CSE</div>
+            <div class="detail">Roll no. - 2025b01010280</div>
+            <div class="detail">1st year</div>
+        </div>
+        <div class="card">
+            <div class="avatar">SY</div>
+            <div class="name">Sahil yadav</div>
+            <div class="detail">B.tect - CSE</div>
+            <div class="detail">Roll no. - 2025b01010284</div>
+            <div class="detail">1st year</div>
+        </div>
+        <div class="card">
+            <div class="avatar">AM</div>
+            <div class="name">Avneesh Mishra</div>
+            <div class="detail">B.tect - CSE</div>
+            <div class="detail">Roll no. - 2025b0101025</div>
+            <div class="detail">1st year</div>
+        </div>
+    </div>
+</body>
+
+</html>
